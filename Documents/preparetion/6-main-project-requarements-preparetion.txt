@@ -1,0 +1,145 @@
+You are a Senior Software Architect and Product Designer.
+
+I am building an AI-powered project and my goal is:
+- Deliver a working application
+- Ensure 90%+ of the codebase is AI-generated
+- Keep scope realistic for limited development time
+- Focus on business value and clean architecture
+
+Your task is to generate a COMPLETE project definition including:
+
+------------------------------------------------------------
+1️⃣ FINAL PROJECT SCOPE
+------------------------------------------------------------
+- Define clear problem statement
+- Target audience
+- Business value
+- In-scope features (MVP)
+- Out-of-scope features
+- Non-functional constraints
+- Time constraints assumption (small project, fast delivery)
+
+Scope must be realistic and achievable.
+
+------------------------------------------------------------
+2️⃣ BUSINESS POSITIONING (README-READY)
+------------------------------------------------------------
+Generate a strong README positioning section:
+- Product summary (what it is)
+- Why it matters
+- Key benefits
+- Target users
+- Differentiation
+- Example use case
+
+Tone: concise, product-focused, suitable for GitHub repository front page.
+
+------------------------------------------------------------
+3️⃣ SYSTEM ARCHITECTURE
+------------------------------------------------------------
+Design clean, production-ready architecture including:
+
+- High-level system diagram description
+- Layered architecture breakdown:
+    • Presentation layer
+    • Application layer
+    • Domain layer
+    • Infrastructure layer
+- Clear responsibility separation
+- Data flow explanation
+- API design strategy
+- AI integration strategy
+- Error handling strategy
+
+Use modern best practices.
+Architecture must be simple but scalable.
+
+------------------------------------------------------------
+4️⃣ TECHNOLOGY STACK
+------------------------------------------------------------
+Recommend:
+- Frontend stack
+- Backend stack
+- AI integration approach
+- Database
+- Hosting
+- Dev tooling
+
+Justify each choice briefly.
+Prioritize:
+- Simplicity
+- AI-friendliness
+- Fast implementation
+- Copilot compatibility
+
+------------------------------------------------------------
+5️⃣ DETAILED AI-DRIVEN IMPLEMENTATION PLAN
+------------------------------------------------------------
+Create a step-by-step execution plan optimized for AI-assisted development:
+
+- Phase breakdown
+- What to generate first
+- How to structure prompts
+- How to enforce consistency
+- How to validate AI-generated code
+- Folder structure plan
+- Commit strategy
+- Testing strategy
+
+Include:
+“Prompt templates” for:
+- generating new features
+- refactoring
+- adding tests
+- implementing APIs
+
+------------------------------------------------------------
+6️⃣ SOFTWARE REQUIREMENTS SPECIFICATION (SRS)
+------------------------------------------------------------
+Generate a structured SRS document including:
+
+1. Introduction
+2. Overall description
+3. Functional requirements
+4. Non-functional requirements
+5. System features (detailed)
+6. External interface requirements
+7. Data requirements
+8. Assumptions & constraints
+
+Make it realistic and professional.
+
+------------------------------------------------------------
+7️⃣ STRATEGY TO ACHIEVE 90%+ AI-GENERATED CODE
+------------------------------------------------------------
+Provide a concrete strategy:
+- Coding workflow
+- Rules for manual vs AI code
+- Review checklist
+- Metrics to measure AI-generated percentage
+- How to document AI usage
+
+------------------------------------------------------------
+8️⃣ KILLER FEATURE (2–3 HOURS IMPLEMENTATION)
+------------------------------------------------------------
+Propose one high-impact feature:
+- Strong perceived value
+- Technically simple
+- Can be implemented in 2–3 hours
+- Enhances demo appeal
+
+Explain:
+- Why it’s powerful
+- How to implement it quickly
+- Minimal architecture changes needed
+
+------------------------------------------------------------
+
+Formatting requirements:
+- Use clean markdown
+- Clear headings
+- Bullet points where appropriate
+- No fluff
+- Practical and implementation-oriented
+
+Focus on clarity, realism, and execution feasibility.

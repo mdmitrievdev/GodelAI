@@ -1,0 +1,245 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a3e;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #5050a0;
+  margin: 0;
+}
+
+/* ── Card ── */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  background: #ffffff;
+  border: 1px solid #c0c2e8;
+  border-radius: var(--radius-2xl);
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(100, 108, 255, 0.07);
+}
+
+/* ── Section ── */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3838b0;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #c0c2e8;
+}
+
+/* ── Field ── */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a3e;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #6060a0;
+  line-height: 1.45;
+}
+
+.input {
+  padding: 0.55rem 0.85rem;
+  border-radius: 7px;
+  border: 1px solid #c0c2e8;
+  background: #f4f4ff;
+  color: #1a1a3e;
+  font-size: 0.9rem;
+  font-family: var(--font-family-mono);
+  outline: none;
+  transition: border-color var(--transition-fast);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+/* ── Toggle ── */
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.toggleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toggle {
+  flex-shrink: 0;
+  position: relative;
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition-normal);
+  outline: none;
+}
+
+.toggle:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.toggleOn {
+  background: var(--color-primary);
+}
+
+.toggleOff {
+  background: var(--color-border);
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform var(--transition-normal);
+}
+
+.toggleOn .toggleThumb {
+  transform: translateX(24px);
+}
+
+.statusBadgeRow {
+  margin-top: 0.35rem;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badgeMock {
+  background: var(--color-primary-bg-subtle);
+  color: var(--color-primary-soft);
+  border: 1px solid var(--color-primary-bg-admin);
+}
+
+.badgeLive {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid var(--color-success-border);
+}
+
+/* ── Saved state read-out ── */
+
+.dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.dt {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5050a0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-self: center;
+}
+
+.dd {
+  font-size: 0.9rem;
+  color: #1a1a3e;
+  font-family: var(--font-family-mono);
+  margin: 0;
+  align-self: center;
+}
+
+/* ── Feedback ── */
+
+.successMessage {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success-border);
+  color: var(--color-success);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── Actions ── */
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.25rem;
+  border-top: 1px solid #c0c2e8;
+}
+
+.saveButton {
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast), opacity var(--transition-fast);
+}
+
+.saveButton:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.saveButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -1,0 +1,122 @@
+/* ══════════════════════════════════════════════════════════════════
+   Design Tokens — PR Review Assistant
+   All colors, fonts, radii, and transitions in one place.
+   CSS modules reference these via var(--token-name).
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Backgrounds ── */
+  --color-bg-base: #0f0f1a;
+  --color-bg-primary: #242424;
+  --color-bg-secondary: #1a1a2e;
+  --color-bg-tertiary: #13131f;
+  --color-bg-surface: rgba(255, 255, 255, 0.04);
+  --color-bg-surface-hover: rgba(255, 255, 255, 0.06);
+  --color-bg-surface-subtle: rgba(255, 255, 255, 0.03);
+  --color-bg-surface-active: rgba(255, 255, 255, 0.05);
+  --color-bg-surface-input: rgba(255, 255, 255, 0.04);
+  --color-bg-code: rgba(0, 0, 0, 0.35);
+
+  /* ── Borders ── */
+  --color-border: #2a2a4a;
+  --color-border-subtle: #1e1e3a;
+  --color-border-faint: rgba(255, 255, 255, 0.08);
+  --color-border-input: #2a2a4a;
+  --color-border-input-focus: var(--color-primary);
+
+  /* ── Text ── */
+  --color-text-primary: #f0f0ff;
+  --color-text-secondary: #c8c8e8;
+  --color-text-muted: #a0a0c0;
+  --color-text-dim: #8080a8;
+  --color-text-footer: #9898b8;
+  --color-text-heading: #ffffff;
+  --color-text-body: rgba(255, 255, 255, 0.92);
+  --color-text-code: #e2e8f0;
+  --color-text-label: #dcdcf8;
+  --color-text-snippet: #c8c8e8;
+  --color-text-white: #ffffff;
+
+  /* ── Primary / Accent ── */
+  --color-primary: #646cff;
+  --color-primary-hover: #535bf2;
+  --color-primary-light: #a0a8ff;
+  --color-primary-soft: #9090ff;
+  --color-primary-bg: rgba(100, 108, 255, 0.2);
+  --color-primary-bg-subtle: rgba(100, 108, 255, 0.12);
+  --color-primary-bg-admin: rgba(100, 108, 255, 0.25);
+  --color-primary-bg-faint: rgba(100, 108, 255, 0.18);
+  --color-primary-bg-hover: rgba(100, 108, 255, 0.07);
+  --color-primary-border: rgba(100, 108, 255, 0.5);
+  --color-primary-border-subtle: rgba(100, 108, 255, 0.15);
+  --color-primary-glow: rgba(100, 108, 255, 0.4);
+
+  /* ── Severity — Critical (red) ── */
+  --color-critical: #dc2626;
+  --color-critical-text: #fca5a5;
+  --color-critical-bg: rgba(220, 38, 38, 0.18);
+  --color-critical-bg-subtle: rgba(220, 38, 38, 0.15);
+  --color-critical-bg-error: rgba(220, 38, 38, 0.12);
+  --color-critical-border: rgba(220, 38, 38, 0.4);
+  --color-critical-border-error: rgba(220, 38, 38, 0.5);
+
+  /* ── Severity — Warning (orange) ── */
+  --color-warning: #ea580c;
+  --color-warning-text: #fdba74;
+  --color-warning-bg: rgba(234, 88, 12, 0.18);
+  --color-warning-border: rgba(234, 88, 12, 0.4);
+
+  /* ── Severity — Info (blue) ── */
+  --color-info: #3b82f6;
+  --color-info-text: #93c5fd;
+  --color-info-bg: rgba(59, 130, 246, 0.18);
+  --color-info-bg-subtle: rgba(147, 197, 253, 0.1);
+  --color-info-border: rgba(59, 130, 246, 0.4);
+  --color-info-border-subtle: rgba(147, 197, 253, 0.25);
+
+  /* ── Confidence — High (green) ── */
+  --color-confidence-high: #16a34a;
+  --color-confidence-high-text: #86efac;
+  --color-confidence-high-bg: rgba(22, 163, 74, 0.18);
+  --color-confidence-high-border: rgba(22, 163, 74, 0.4);
+
+  /* ── Confidence — Medium (yellow) ── */
+  --color-confidence-medium: #ca8a04;
+  --color-confidence-medium-text: #fde047;
+  --color-confidence-medium-bg: rgba(202, 138, 4, 0.18);
+  --color-confidence-medium-border: rgba(202, 138, 4, 0.4);
+
+  /* ── Suggestion (green tint) ── */
+  --color-suggestion-bg: rgba(22, 163, 74, 0.08);
+  --color-suggestion-border: rgba(22, 163, 74, 0.2);
+
+  /* ── Success / Live ── */
+  --color-success: #30d564;
+  --color-success-bg: rgba(48, 213, 100, 0.1);
+  --color-success-border: rgba(48, 213, 100, 0.25);
+
+  /* ── Danger / Delete ── */
+  --color-danger-text: #ff6464;
+  --color-danger-bg: rgba(255, 60, 60, 0.1);
+  --color-danger-bg-hover: rgba(255, 60, 60, 0.22);
+  --color-danger-border: #3a1a1a;
+  --color-danger-border-hover: #ff4040;
+
+  /* ── Typography ── */
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 12px;
+  --radius-full: 9999px;
+
+  /* ── Transitions ── */
+  --transition-fast: 0.15s;
+  --transition-normal: 0.2s;
+  --transition-slow: 0.25s;
+}

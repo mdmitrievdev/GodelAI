@@ -1,0 +1,212 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+/* ── Header ── */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.headerMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-code);
+  margin: 0 0 0.5rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+}
+
+.metaLabel {
+  color: var(--color-text-secondary);
+}
+
+.metaValue {
+  color: var(--color-text-code);
+  font-weight: 500;
+}
+
+.prLink {
+  color: var(--color-info-text);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.prLink:hover {
+  text-decoration: underline;
+}
+
+.backLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-info-bg-subtle);
+  border: 1px solid var(--color-info-border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--color-info-text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  transition: background var(--transition-fast);
+}
+
+.backLink:hover {
+  background: rgba(147, 197, 253, 0.2);
+}
+
+/* ── Section wrapper ── */
+
+.section {
+  margin-top: 1.75rem;
+}
+
+/* ── Filter bar ── */
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-faint);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.25rem;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.filterBtn {
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--color-bg-surface-hover);
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.filterBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-code);
+}
+
+.filterBtn.active {
+  background: rgba(147, 197, 253, 0.15);
+  border-color: var(--color-info-text);
+  color: var(--color-info-text);
+}
+
+.filterBtn.critical.active {
+  background: var(--color-critical-bg);
+  border-color: var(--color-critical-text);
+  color: var(--color-critical-text);
+}
+
+.filterBtn.warning.active {
+  background: var(--color-warning-bg);
+  border-color: var(--color-warning-text);
+  color: var(--color-warning-text);
+}
+
+.filterBtn.info.active {
+  background: var(--color-info-bg);
+  border-color: var(--color-info-text);
+  color: var(--color-info-text);
+}
+
+.select {
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--color-bg-surface-hover);
+  color: var(--color-text-code);
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.select:focus {
+  border-color: var(--color-info-text);
+}
+
+/* ── Diff panel ── */
+
+.diffToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg-surface-active);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  margin-bottom: 0.75rem;
+}
+
+.diffToggle:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: var(--color-text-code);
+}
+
+.diffBlock {
+  overflow-x: auto;
+  padding: 1.25rem;
+  background: var(--color-bg-code);
+  border: 1px solid var(--color-border-faint);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-family-mono);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  white-space: pre;
+  margin: 0;
+}

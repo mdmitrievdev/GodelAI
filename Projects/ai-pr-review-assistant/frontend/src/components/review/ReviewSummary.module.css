@@ -1,0 +1,59 @@
+.container {
+  padding: 1.25rem;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-primary-border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  margin: 0 0 1rem 0;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  background-color: var(--color-bg-surface-subtle);
+  border: 1px solid var(--color-border-faint);
+  border-radius: var(--radius-md);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Severity-colored stat values */
+.critical .statValue {
+  color: var(--color-critical-text);
+}
+
+.warning .statValue {
+  color: var(--color-warning-text);
+}
+
+.info .statValue {
+  color: var(--color-info-text);
+}

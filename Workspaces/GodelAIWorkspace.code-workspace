@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../Documents"
+		},
+		{
+			"path": "../Tools"
+		},
+		{
+			"path": "../Projects/ai-pr-review-assistant"
+		}
+	],
+	"settings": {
+		"github.copilot.advanced": {
+			"instructions": [
+				"../Projects/ai-pr-review-assistant/.github/copilot-instructions.md"
+			]
+		}
+	}
+}

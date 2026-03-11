@@ -1,0 +1,109 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #eef0ff;
+}
+
+/* ── Top Bar ── */
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #c0c2e8;
+  box-shadow: 0 1px 4px rgba(100, 108, 255, 0.08);
+}
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.adminBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.35);
+}
+
+.backLink {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #5050a0;
+  text-decoration: none;
+  transition: color var(--transition-normal);
+}
+
+.backLink:hover {
+  color: #3030cc;
+}
+
+/* ── Body (sidebar + main) ── */
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background-color: #f8f8ff;
+  border-right: 1px solid #c0c2e8;
+  padding: 1.5rem 0.75rem;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.875rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555585;
+  text-decoration: none;
+  transition: color var(--transition-normal), background-color var(--transition-normal);
+}
+
+.sidebarLink:hover {
+  color: #2020aa;
+  background-color: rgba(100, 108, 255, 0.08);
+}
+
+.sidebarLinkActive {
+  color: #3838cc;
+  background-color: rgba(100, 108, 255, 0.14);
+  font-weight: 600;
+}
+
+.sidebarLinkIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ── Main content ── */
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

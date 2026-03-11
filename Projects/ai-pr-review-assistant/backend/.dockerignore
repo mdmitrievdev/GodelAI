@@ -1,0 +1,26 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# IDE and editor artifacts
+.vs/
+**/*.user
+**/*.suo
+*.DotSettings.user
+
+# Git
+.git/
+.github/
+
+# Documentation
+*.md
+
+# Test results
+/tmp/test-results/
+
+# Docker files (prevent recursive copy)
+Dockerfile
+.dockerignore
+
+# Local environment overrides
+appsettings.Development.json

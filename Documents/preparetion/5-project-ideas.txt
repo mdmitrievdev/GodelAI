@@ -1,0 +1,67 @@
+Project Ideas for Godel AI-Assisted Development
+Based on your context (.NET + React/TypeScript stack, 2 days max, 90% AI-generated), here are 5 creative and practical ideas:
+
+1. 🧠 Smart Meeting Notes Analyzer
+Business Value: Saves time after team meetings by auto-summarizing decisions, action items, and owners.
+
+What it does:
+
+User pastes raw meeting notes/transcript
+AI extracts: decisions made, tasks assigned, deadlines, participants
+Displays structured output with export to Markdown/JSON
+Stack: React (TypeScript) + .NET minimal API + OpenAI/Copilot API
+Complexity: ⭐⭐ Low-Medium
+Pages: Upload page, Results page, History page
+Layouts: Main layout + clean result layout
+
+2. 🔍 PR Review Assistant
+Business Value: Helps developers get a quick AI-driven code review before submitting a PR — saves senior dev time.
+
+What it does:
+
+User pastes a code diff or GitHub PR URL
+AI analyzes: bugs, naming issues, performance hints, security flags
+Displays categorized feedback with severity levels
+Stack: React (TypeScript) + .NET Web API + GitHub API (optional)
+Complexity: ⭐⭐ Low-Medium
+Pages: Review input page, Feedback dashboard, History
+Layouts: Main layout + reviewer/admin layout
+
+3. 📋 Employee Onboarding Knowledge Quiz Generator
+Business Value: Speeds up onboarding by auto-generating quizzes from internal docs or wikis.
+
+What it does:
+
+User uploads/pastes a document (tech spec, process doc, policy)
+AI generates multiple-choice quiz questions
+Employee takes the quiz, gets a score and explanations
+Stack: React (TypeScript) + .NET API + file upload
+Complexity: ⭐⭐⭐ Medium
+Pages: Upload page, Quiz page, Results page, Admin dashboard
+Layouts: Main layout + admin layout + quiz layout
+
+4. 🗂️ Job Description ↔ CV Matcher
+Business Value: Helps HR/tech leads quickly score candidate CVs against job requirements.
+
+What it does:
+
+Paste/upload a job description + CV text
+AI scores the match (0–100%) with skill gap analysis
+Shows matched skills, missing skills, and hiring recommendation
+Stack: React (TypeScript) + .NET minimal API
+Complexity: ⭐⭐ Low-Medium
+Pages: Input page, Match results page, Comparison history
+Layouts: Main layout + report layout
+
+5. 🚦 Team Workload Visualizer (AI-assisted)
+Business Value: Helps team leads spot overloaded team members using data from Jira/manual input.
+
+What it does:
+
+User inputs team tasks (manual or paste from Jira export)
+AI estimates effort, detects overload, suggests redistribution
+Visual dashboard with charts
+Stack: React (TypeScript) + .NET API + Chart.js/Recharts
+Complexity: ⭐⭐⭐ Medium
+Pages: Input page, Dashboard, Team view, Admin settings
+Layouts: Main layout + admin layout + dashboard layout

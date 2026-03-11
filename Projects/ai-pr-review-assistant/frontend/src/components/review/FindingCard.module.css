@@ -1,0 +1,98 @@
+.card {
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-surface);
+  border-left: 3px solid transparent;
+  transition: background-color var(--transition-normal);
+}
+
+.card:hover {
+  background-color: var(--color-bg-surface-hover);
+}
+
+/* Severity left-border colors */
+.critical {
+  border-left-color: var(--color-critical);
+}
+
+.warning {
+  border-left-color: var(--color-warning);
+}
+
+.info {
+  border-left-color: var(--color-info);
+}
+
+.header {
+  margin-bottom: 0.75rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-heading);
+  margin: 0;
+}
+
+.badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.category {
+  padding: 0.1rem 0.45rem;
+  background-color: var(--color-primary-bg-subtle);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.lineRef {
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-body);
+  margin-bottom: 0.75rem;
+}
+
+.suggestion {
+  background-color: var(--color-suggestion-bg);
+  border: 1px solid var(--color-suggestion-border);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.85rem;
+}
+
+.suggestionLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-confidence-high-text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.suggestionText {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}

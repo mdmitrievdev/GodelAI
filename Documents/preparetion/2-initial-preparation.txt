@@ -1,0 +1,82 @@
+RU
+Подготовка проекта:
+
+1. Создать скилл на основе данных из трёх воркшопов:
+   - a. Создание summary с помощью Copilot в браузере.
+   - b. Создание скилла на основе summary.
+
+2. Создать контекст на основе описания оригинального задания.
+
+3. Конвертировать скилл в инструкции.
+
+4. На основании исходных данных и контекста подготовить несколько идей проекта для реализации с помощью AI.
+
+5. Выбрать идею для реализации.
+
+6. Подготовить Project Requirements, где необходимо описать архитектуру, стек и прочее:
+   - a. Развёрнуто описать архитектуру, слои и технологии. Создать детальный план выполнения проекта с использованием AI.
+   - b. Создать SRS. Подготовить бэклог на основе SRS с разделением на frontend-, backend- и infrastructure-таски.
+   - c. Описать стратегию и правила AI-генерации кода: порядок генерации, шаблоны промптов, запрещённые практики.
+   - d. Подготовить шаблоны документации: README, Prompt Log, Insights.
+
+7. Создать шаблонный файл Prompt Log (сохранить его в подходящем месте, которое можно определить после анализа структуры `E:\Dev\GodelAI\Documents`) и добавить/обновить текущее правило или инструкцию для сохранения каждого промпта в новый файл в папке `E:\Dev\GodelAI\Documents\prompts`.
+
+   Использовать шаблон имени файла: `{IDENTITY_NUMBER}_{SHORT_KEY}`, где:
+   - `IDENTITY_NUMBER` — порядковый номер промпта (`1`, `2`, `3` и т.д.);
+   - `SHORT_KEY` — краткое описание промпта, слова разделены дефисом (например, `xxx-yyy-zzz`).
+
+8. Проанализировать все исходные данные из "E:\Dev\GodelAI\Documents\project-requarements":
+   - a. Найти контекст в "E:\Dev\GodelAI\Documents\ai-common-project-structure" или глубже. Улучшить и обновить контекст, если необходимо, основываясь на анализе из "project-requarements" папки. Используй только лучшие практики, с точки зрения AI и GitHub Copilot;
+   - b. Улучшить и обновить все инструкции и прочие артефакты в "E:\Dev\GodelAI\Documents\ai-common-project-structure" или глубже, если необходимо, основываясь на анализе из "project-requarements" папки. Используй только лучшие практики, с точки зрения AI и GitHub Copilot;
+
+9. Сгенерировать каркас проекта (готовую к использованию структуру папок репозитория).
+
+10. Сгенерировать соответствующий шаблон `README.md`.
+
+11. Добавить правило/инструкцию для автоматического обновления `README.md`.
+
+12. Подключить MCP для работы с GitHub.
+
+13. Закоммитить код в GitHub.
+
+
+EN
+Project preparation:
+
+1. Create a skill based on data from three workshops:
+   - a. Create a summary using Copilot in the browser.
+   - b. Create the skill based on the summary.
+
+2. Create context based on the original task description.
+
+3. Convert the skill into instructions.
+
+4. Based on the source data and context, prepare several project ideas for implementation using AI.
+
+5. Choose an idea to implement.
+
+6. Prepare Project Requirements where architecture, stack, and other details must be described:
+   - a. Describe in detail the architecture, layers, and technologies. Create a detailed plan for executing the project using AI.
+   - b. Create an SRS. Prepare a backlog based on the SRS, dividing tasks into frontend, backend, and infrastructure.
+   - c. Describe the strategy and rules for AI code generation: generation order, prompt templates, prohibited practices.
+   - d. Prepare documentation templates: README, Prompt Log, Insights.
+
+7. Create a Prompt Log template file (save it in an appropriate location, to be determined after analyzing the structure of E:\\Dev\\GodelAI\\Documents) and add/update the current rule or instruction to save every prompt in a new file in the folder E:\\Dev\\GodelAI\\Documents\\prompts.
+
+   Use the filename template: `{IDENTITY_NUMBER}_{SHORT_KEY}`, where:
+   - `IDENTITY_NUMBER` — sequential prompt number (`1`, `2`, `3`, etc.);
+   - `SHORT_KEY` — short prompt description, words separated by hyphens (for example, `xxx-yyy-zzz`).
+
+8. Analyze all source data from "E:\Dev\GodelAI\Documents\project-requarements":
+	-a. Locate context in "E:\Dev\GodelAI\Documents\ai-common-project-structure" or deeper. Improve and update the context if necessary based on the analysis of the "project-requarements" folder. Use only best practices from the perspective of AI and GitHub Copilot;
+	-b. Improve and update all instructions and other artifacts in "E:\Dev\GodelAI\Documents\ai-common-project-structure" or deeper, if necessary, based on the analysis of the "project-requarements" folder. Use only best practices from the perspective of AI and GitHub Copilot;
+
+9. Generate the project skeleton (a ready-to-use repository folder structure).
+
+10. Generate the corresponding `README.md` template.
+
+11. Add a rule/instruction for automatic README.md updates.
+
+12. Connect MCP for working with GitHub.
+
+13. Commit the code to GitHub.
